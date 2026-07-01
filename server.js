@@ -21,7 +21,7 @@ app.use(cors(
 
 
     {
-        origin : "https://notes-app-nine-dusky.vercel.app/"
+        origin : "https://notes-app-nine-dusky.vercel.app"
            
     }
     //origin is a property which tell us that our backend can connect to which which frontend in the form of * 
