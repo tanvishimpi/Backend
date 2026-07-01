@@ -186,12 +186,12 @@ catch(err){
        
          const notes = await Notes.find();
 
-         if(notes.length===0){
-            return res.status(400).json({
-                message : "Notes are empty",
+        //  if(notes.length===0){
+        //     return res.status(400).json({
+        //         message : "Notes are empty",
                 
-            })
-         }
+        //     })
+        //  }
          return res.status(200).json({
             message: "Notes fetched succesfully",
             notes : notes
@@ -266,7 +266,7 @@ exports.updateNotes = async(req,res) =>{
         const id = req.params.id
         const existingNotes = await Notes.find();
 
-        if(notes.length===0){
+        if(existingNotes.length===0){
             return res.status(404).json({
                 message : "notes not found in database"
             })
@@ -285,7 +285,7 @@ exports.updateNotes = async(req,res) =>{
 
         res.status(200).json({
          message: "Note updated successfully",
-         notes
+         existingNotes
 
 
          })
