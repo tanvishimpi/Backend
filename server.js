@@ -21,7 +21,8 @@ app.use(cors(
 
 
     {
-        origin : ['http://localhost:5173','http://localhost:5174','http://localhost:5175','http://localhost:5176','http://localhost:5177','http://localhost:5178','http://localhost:5179'] 
+        origin : ["notes-app-nine-dusky.vercel.app"]
+                 
            
     }
     //origin is a property which tell us that our backend can connect to which which frontend in the form of * 
