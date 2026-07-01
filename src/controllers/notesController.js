@@ -144,8 +144,8 @@
 
 
 const express = require('express');
-const Notes = require('../models/notes');
-const notes = require('../models/notes');
+const Notes = require('../models/Notes');
+
 
 exports.createNotes = async(req,res)=>{
 
